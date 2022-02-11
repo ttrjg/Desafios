@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown</title>
+
+    <link rel="stylesheet" href="./countDown.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Open+Sans+Condensed:wght@300&family=Poppins&family=Roboto:wght@100&family=Spartan&family=Work+Sans&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+<header>
+    <img src="./images/top-image.svg" alt="">
+</header>
+
+<main>
+    <h1>ready to lounch in...</h1>
+  
+    <p class="Tcount" id="Tday">Days</p>
+    <p class="Tcount" id="Thrs">Hours</p>
+    <p class="Tcount" id="Tmin">Minuts</p>
+    <p class="Tcount" id="Tsec">Seconds</p>
+
+    <p class="count" id="day1">0</p>
+    <p class="count" id="hrs1">0</p>
+    <p class="count" id="min1">0</p>
+    <p class="count" id="sec1">0</p>
+    
+    <img src="./images/rocket.svg" alt="" class="rocket">
+
+    <p class="prg">Inscreva-se para saber mais sobre o lançamento</p>
+
+    <button id="openModal">
+        Inscreva-se
+    </button>  
+    
+</main>
+
+<div class="invisible">
+    <form action="">
+        <fieldset>
+    
+            <legend>Contato</legend>
+    
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" title="Nome" placeholder="Nome completo" required>
+            <br>
+            <br>
+            <label for="email">E-mail</label>
+            <input id="email" type="email" name="email" title="email" placeholder="exemplo@dominio.com"  pattern=".+@.*\.*" required>  
+            <br>
+            <br>
+            <button type="submit" id="Send">Enviar</button>
+        </fieldset>
+    </form>
+</div>
+
+<footer>
+    <img src="./images/bottom-image.svg" alt="">
+</footer>
+
+
+
+
+<script src="./countDown.js" defer></script>
+
+</body>
+</html>

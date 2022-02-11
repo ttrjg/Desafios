@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SideBar</title>
+    <link rel="stylesheet" href="./sidebar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Poppins&family=Roboto:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+    <aside class="desactive">
+
+        <div class="header">
+            <img class="logo" src="./images/logo.svg" alt="" hidden>
+            <img class="imgMenu" src="./images/menu.svg" alt="">
+        </div>
+        
+        <ul>
+            <li onclick="selected(), selectPage()"><img src="./images/search.svg" alt=""><p hidden>Search</p></li>
+            <li onclick="selected(), selectPage()" class="selected"><img src="./images/grid.svg" alt=""><p hidden>Dashboard</p></li>
+            <li onclick="selected(), selectPage()"><img src="./images/pet.svg" alt=""><p hidden>Pets</p></li>
+            <li onclick="selected(), selectPage()"><img src="./images/user.svg" alt=""><p hidden>Customers</p></li>
+            <li onclick="selected(), selectPage()"><img src="./images/vet.svg" alt=""><p hidden>Vets</p></li>
+            <li onclick="selected(), selectPage()"><img src="./images/settings.svg" alt=""><p hidden>Settings</p></li>
+        </ul>
+
+        <div class="footer">
+            <img class="avatar"   src="./images/photo.jpg" alt="" hidden>
+            
+            <div class="info">
+                <div class="name">
+                    <p hidden>André Luiz de Vito</p>
+                </div>
+                <div class="profession">
+                    <p hidden>Veterinario</p>
+                </div>
+            </div>
+            
+            <img class="icoLogout" src="./images/log-out.svg" alt="">
+        </div>
+    </aside>
+
+     <main>
+        <div id="Dashboard" class="page">
+            <h1>Dashboard</h1>
+        </div>
+
+        <div id="Search" class="page" hidden>
+            <h1>Search</h1>
+        </div>
+
+        <div id="Pets" class="page" hidden>
+            <h1>Pets</h1>
+        </div>
+
+        <div id="Customers" class="page" hidden>
+            <h1>Customers</h1>
+        </div>
+
+        <div id="Vets" class="page" hidden>
+            <h1>Vets</h1>
+        </div>
+
+        <div id="Settings" class="page" hidden>
+            <h1>Settings</h1>
+        </div>
+
+    </main>
+   
+
+    <script src="./sidebar.js"></script>
+</body>
+</html>
