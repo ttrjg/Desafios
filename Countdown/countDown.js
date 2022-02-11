@@ -6,7 +6,7 @@ const button = document.querySelector("#openModal")
 const div = document.querySelector(".invisible")
 const button2 = document.querySelector("#send")
 
-const sdate = "28 jan 2022"    
+const sdate = "20 nov 2022"    
 
 function countDown () {
 
