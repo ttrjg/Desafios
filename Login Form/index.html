@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Open+Sans+Condensed:wght@300&family=Poppins&family=Roboto:wght@100&family=Spartan&family=Work+Sans&display=swap" rel="stylesheet">
+
+    <script src="./script.js" defer></script>
+
+</head>
+<body>
+
+    <main>
+
+        <div class="logo"><img src="./images/logo.svg" alt=""></div>
+   
+        <div class="Form">
+
+        <form action="">
+            <fieldset>
+
+        
+                <h1 class="poppins title"> <img src="./images/log-in.svg" alt=""> Faça seu login </h1>
+                
+                <p class="text roboto" >Entre com suas informações de cadastro.</p>
+
+                <div class="inputContainer">
+                    <div class="icon">
+
+                        <img src="./images/mail.svg" alt="" class="mailImg">
+                        <img src="./images/mail-focus.svg" alt="" class="mailImg" hidden>
+                    
+                    </div>
+                    <label for="email" class="text poppins">E-mail</label>
+                    <div class="inputcont">
+                        <input class="text roboto inputArea" type="email" name="email" id="email" required placeholder="Digite seu e-mail">
+                    </div>
+                    
+
+                </div>
+
+                <div class="inputContainer">
+                    <div class="icon">
+
+                        <img src="./images/lock.svg" alt="" class="passImg">
+                        <img src="./images/lock-focus.svg" alt="" class="passImg" hidden>
+                        <img src="./images/eye.svg" alt="" class="eye">
+
+                    </div>
+                    <label for="password" class="text poppins">Senha</label>
+                    <div class="inputcont">
+                        <input class="text roboto inputArea" type="password" id="password" name="password" required placeholder="Digite sua senha">
+                    </div>
+                    
+
+                </div>
+
+
+                <div class="linha">
+
+                    <div class="cbCont">
+                        <div class="inputContainer">
+                            <div class="iconCheck"></div>
+                            <input type="checkbox" id="remember" checked>
+                        </div>    
+                        <label class="text roboto" for="remember">Lembre-me</label>
+                    </div>
+
+                    <a href="" class="RecPass poppins destaque">Esqueci minha senha</a>
+                </div>
+
+
+                <button type="submit" class="poppins">ENTRAR</button>
+
+                <p class="poppins destaque">Não tem uma conta? <a class="poppins destaque" href="" ><strong>Registre-se</strong></a></p>
+
+            </fieldset>
+        </form>
+
+
+    </main>
+
+    <div class="backgroundImg"></div>
+
+</body>
+</html>
